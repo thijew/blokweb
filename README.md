@@ -64,7 +64,7 @@ https://www.endclothing.com/nl/latest-products/new-this-week
 <img src='images/breakdownschets-hover-state.png' width="375px" alt="breakdown van een dynamisch deel">
 
 ### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/breakdownschets-pagina2" width="375px" alt="breakdown van de 2e pagina">
+<img src="images/breakdownschets-pagina2.png" width="375px" alt="breakdown van de 2e pagina">
 
 </details>
 
