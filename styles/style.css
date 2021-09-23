@@ -1,5 +1,344 @@
 /* CSS Document */
 *, *::after, *::before {
-  box-sizing:border-box;  
+  box-sizing:border-box; 
+  margin: 0;
+  padding: 0; 
 }
 
+:root {
+  --main-color:black;
+  --background-color: white;
+  --second-text-color:#333333;
+  --sign-up-button-bg:  rgb(244, 244, 244);
+  --sign-up-button-color: rgb(153, 153, 153);
+}
+
+body {
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+/* img {
+  width: 100px;
+} */
+
+
+
+
+
+/**********/
+/* HEADER */
+/**********/
+header {  
+  position: sticky;
+  top: 0;
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  background-color:var(--background-color);
+}
+
+/* intro text */
+header p {
+  background-color:var(--main-color);
+  color:var(--background-color);
+  text-align: center;
+  line-height: 1em;
+  font-size: 0.714286em;
+  text-transform: uppercase;
+  padding: 1em;
+  margin: 0;
+  grid-column-start: 1;
+  grid-column-end: -1;
+
+}
+
+/* logo */
+header > a {
+  order: 1;
+  text-align: center;
+  
+}
+
+header > a img {
+  width: 100px;
+}
+
+/* open button */
+header > button {
+  position:relative;
+  
+  width:3em; height:3em;
+  margin:0; padding:1.5em 0 0;
+  font-size:1em;
+  appearance:none;
+  border:none;
+  background-color: var(--background-color);
+  align-self: center;
+
+}
+
+header > button span {
+  position:absolute;
+  left:.75em;
+  width:1.5em;
+  height: 2px;
+  background-color: var(--main-color);
+}
+
+header button span:first-of-type {
+  top:.7em;
+}
+
+button span:nth-of-type(2) {
+  top:1.1em;
+
+}
+
+button span:last-of-type {
+  top:1.5em;
+}
+
+
+
+
+/* hoofdmenu */
+header nav {
+  position: fixed;
+  top: 0; bottom:0;
+  left: 0;
+
+  transform:translatex(-100%);
+  padding: 0 2em 0 0em;
+  background-color:var(--background-color);
+  max-width: 50%;
+  transition: 0.5s;
+  z-index: 110;
+}
+
+header nav ul {
+  margin: 0;
+  list-style-type: none;
+
+}
+
+header nav ul li {
+  padding: 1em;
+}
+
+
+/* close button */
+header nav button {
+  position: relative;
+
+}
+
+/* search and basket button */
+header > ul {
+  order: 2;
+  display: flex;
+}
+
+header > ul li {
+  list-style-type: none;
+}
+
+header > ul li img {
+  width: 50px;
+}
+
+
+nav.toonMenu {
+  transform:translatex(0%);
+}
+
+/**********/
+/* MAIN */
+/**********/
+
+/* Slideshow */
+section.slider ul {
+
+
+}
+
+section.slider ul li{
+  list-style-type: none;
+}
+
+section.slider ul li img {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+/* latest products */
+
+main section:nth-of-type(2) {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+main section:nth-of-type(2) > a  {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  line-height: 1.3rem;
+  text-transform: uppercase;
+  
+}
+
+main section:nth-child(2) h2  {
+text-align: center;
+grid-column-start: 1;
+grid-column-end: -1;
+
+}
+
+main section:nth-of-type(2) ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style-type: none;
+  grid-gap: 1.5em;
+  text-align: left;
+  line-height: 1.4em;
+  margin: 0;
+  padding-bottom: .2em;
+
+}
+
+main section:nth-of-type(2) ul li  {
+  text-align: left;
+  line-height: 1.4em;
+  padding-bottom: 4px;
+  letter-spacing: 0.35px;
+  vertical-align: baseline;
+
+}
+
+main section:nth-of-type(2) ul li > a  {
+  text-decoration: none;
+}
+
+main section:nth-of-type(2) ul li > a:visited  {
+  color:var(--main-color)
+}
+
+
+
+main section:nth-of-type(2) ul li img {
+  width: 120px;
+}
+
+/* Verschillende brands */
+
+section.brands ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  list-style-type: none;
+  text-transform: uppercase;
+  line-height: 1.3em;
+  letter-spacing: 0.1em;
+}
+
+section.brands ul img {
+  width: 120px;
+}
+
+section.brands ul a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+section.brands ul p {
+  text-decoration: underline;
+}
+
+
+
+
+
+/**********/
+/* FOOTER */
+/**********/
+
+footer{
+  text-align: center;
+  line-height: 2em;
+}
+
+section form {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+section form input {
+    padding: 8px 0px;
+    color: rgb(26, 26, 26);
+    font-size: 1em;
+    line-height: 1.37em;
+    letter-spacing: 0.45px;
+    border-width: 0px 0px 1px;
+    border-bottom-color: rgb(221, 221, 221);
+    background: var(--background-color);
+
+}
+
+section form button{
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  outline-style: none;
+  border-style: none;
+  height: 2.75em;
+  background-color:var(--sign-up-button-bg);
+  color: var(--sign-up-button-color);
+  line-height: 1.37em;
+  text-align: center;
+  margin-top: 1em;
+}
+
+section.socials ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+
+}
+
+section.socials ul img {
+  width: 50px;
+}
+
+footer section.bottomFooter  {
+  color: var(--second-text-color);
+  font-size: 0.8em;
+
+}
+
+footer section.bottomFooter ul:first-of-type {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+
+}
+
+footer section.bottomFooter ul:first-of-type li a {
+  text-decoration: none;
+}
+
+footer section.bottomFooter ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+
+}
+
+
+footer section.bottomFooter img {
+  width: 50px;
+}
