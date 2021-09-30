@@ -13,7 +13,6 @@ function toggleMenu () {
 }
 
 
-
 // in de nav  de about sectie 
 var aboutButton = document.querySelector("header section.navFooter button:nth-of-type(1)");
 var aboutUl = document.querySelector("header section.navFooter ul:nth-of-type(1)");
@@ -52,6 +51,58 @@ function toggleAboutDrie () {
     contactUl.classList.toggle("toonFooterNav");
     deNav.classList.toggle("noScroll")
 }
+
+
+// Voor de filters
+
+
+var openFilter = document.querySelector(".filters ul li button");
+var filterMenu = document.querySelector(".filters ul:nth-of-type(2)");
+var deSluitButton = document.querySelector(".filters ul:nth-of-type(2) button");
+
+openFilter.addEventListener("click", openFilterMenu);
+deSluitButton.addEventListener("click", openFilterMenu);
+
+function openFilterMenu () {
+    filterMenu.classList.toggle("toonFilters");
+}
+
+
+// voor de brand filters
+
+var brandButton = document.querySelector(".filters ul:nth-of-type(2) li");
+var brandUl = document.querySelector(".filters ul:nth-of-type(3)");
+var brandBackButton = document.querySelector(".filters ul:nth-of-type(3) button")
+
+brandButton.addEventListener("click", toggleBrand);
+brandBackButton.addEventListener("click", toggleBrand)
+
+function toggleBrand () {
+    brandUl.classList.toggle("toonBrands");
+}
+
+
+// // filters toepassen
+// var neighborhoodCheckBox =  document.getElementById("neighborhood")
+// var neighborhoods = document.querySelectorAll("li.neighborhoodClass")
+
+//     neighborhoodCheckBox.addEventListener('change', function() {
+//   if (this.checked) {
+//     console.log("Checkbox is  checked..");
+    
+//   } else {
+//        neighborhoods.classList.toggle("neighborhoodHidden")
+//   }
+// });
+
+
+
+
+
+
+
+
+
 
 
 

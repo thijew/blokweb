@@ -8,7 +8,7 @@
 	
 	<title>End Clothing</title>
 	
-	<link href="styles/style.css" rel="stylesheet">
+	<link href="styles/style-page2.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 	<link rel="stylesheet" href="https://use.typekit.net/cdy1wri.css"> <!-- font toevoegen -->
 </head>
@@ -32,7 +32,7 @@
 				<img alt="End logo" src="images/end-Logo.jpeg"></a>
 
 			<ul> <!-- menu  -->
-				<li><a href="page2.html">Latest</a></li>
+				<li><a href="#">Latest</a></li>
 				<li><a href="#">Brands</a></li>
 				<li><a href="#">Clothing</a></li>
 				<li><a href="#">Footwear</a></li>
@@ -116,37 +116,82 @@
 	</header>
 
 	<main>
-		
-		<section class="slider"> <!-- voor de slider met imgs -->
+
+		<h2>New this week</h2>
+
+		<section class="filters">
+
 			<ul>
-				<li id="element1">
-					<a href="https://www.endclothing.com/nl/brands/stone-island">
-				<!-- 	<img alt='stone-island' src="images/stoneisland banner.jpg"> -->
-					<h2>Stone Island</h2>
-					<p>Just in.</p>
-					<button>Shop now</button>
-				</a>
+				<li>
+					<label for="sort">Sort</label>
+					<select name="sorts" id="sort">
+					<option value="javascript">Feautured</option>
+					<option value="javascript">Price (Low)</option>
+					<option value="javascript">Price (high)</option>
+					</select>
 				</li>
-				<li id="element2">
-					<a href="https://www.endclothing.com/nl/brands/neighborhood">
-					<!-- <img alt="Neighborhood banner" src="images/neighborhood-banner.jpg"> -->
-					<h2>Neighborhood</h2>
-					<p>Latest arrivals.</p>
-					<button>ONLINE now</button>
-				</a>
+
+				<li>
+					<label for="sort">View</label>
+					<select name="sorts" id="sort">
+					<option value="javascript">Product</option>
+					<option value="javascript">Outfit</option>
+					</select>
 				</li>
+				<li><button>Filter</button></li>
+			</ul>
+
+				<!-- Filter -->
+
+			<ul>
+					<button>&#10005;</button>
+					<h2>Filter</h2>
+					<li>Brand</li>
+					<li>Department</li>
+					<li>Footwear style</li>
+					<li>Colour</li>
+					<li>Clothing size</li>
+					<li>Footwear size</li>
+					<li>Price</li>
 			</ul>
 			<ul>
-				<li><a href="#element1" aria-label="go to element1"></a></li>
-				<li><a href="#element2" aria-label="go to element2"></a></li>
-			</ul>					
-		</section>
-
-		<section> <!-- section met de latest products -->
-			<h2>Latest products</h2>
-			<a href="https://www.endclothing.com/nl/latest-products/new-this-week">View all</a>
-			<ul>
+				<button>&#x3c;</button>
+				<h2>Brand</h2>
 				<li>  
+					<input type="checkbox" id="neighborhood" name="neighborhood">
+			 		<label for="neighborhood">neighborhood</label>
+				</li>
+				<li>  
+					<input type="checkbox" id="ten-c" name="ten-c">
+			 		<label for="ten-c">Ten-c</label>
+				</li>
+				<li>  
+					<input type="checkbox" id="daiwa" name="daiwa">
+			 		<label for="daiwa">Daiwa</label>
+				</li>
+				<li>  
+					<input type="checkbox" id="mastermind" name="mastermind">
+			 		<label for="mastermind">Mastermind</label>
+				</li>
+				<li>  
+					<input type="checkbox" id="affix" name="affix">
+			 		<label for="affix">Affix</label>
+				</li>
+				<li>  
+					<input type="checkbox" id="nanamica" name="nanamica">
+			 		<label for="nanamica">Nanamica</label>
+				</li>
+				<li>  
+					<input type="checkbox" id="salomon" name="salomon">
+			 		<label for="salomon">Salomon</label>
+				</li>
+			</ul>
+		</section>
+		
+		<section> <!-- section met de latest products -->
+
+			<ul>
+				<li class="neighborhoodClass">  
 					<a href="https://www.endclothing.com/nl/neighborhood-stockman-savage-denim-jacket-212xbnh-jkm01-in.html">
 					<img alt="neighbourhood jacket" src="images/neighbourhood-jacket.jpg">
 					<h5>NEIGHBORHOOD STOCKMAN SAVAGE DENIM JACKET</h5>
@@ -154,7 +199,7 @@
 					<p>€569</p>
 				</a>
 				</li>
-				<li> 
+				<li class="ten-c"> 
 					<a href="https://www.endclothing.com/nl/ten-c-down-liner-16ctcud03009-002197-659.html">
 					<img alt="ten c down liner" src="images/ten-c-down-liner.jpg">
 					<h5>Ten-C down liner</h5>
@@ -162,7 +207,7 @@
 					<p>€465</p>
 				</a>
 				</li>
-				<li> 
+				<li class="daiwa"> 
 					<a href="https://www.endclothing.com/nl/daiwa-pier39-long-sleeve-tech-drawstring-tee-be-380-wht.html">
 					<img alt="DAIWA PIER39 LONG SLEEVE TECH DRAWSTRING TEE" src="images/daiwa-long-sleeve.jpg"> 
 					<h5>DAIWA PIER39 LONG SLEEVE TECH DRAWSTRING TEE</h5>
@@ -170,7 +215,7 @@
 					<p>€139</p>
 				</a>
 				</li>
-				<li> 
+				<li class="mastermind"> 
 					<a href="https://www.endclothing.com/nl/mastermind-japan-long-sleeve-skull-pocket-tee-mj21e07-ts070-nvy.html">
 					<img alt="Mastermind japan skull long sleeve" src="images/mastermind-japan-skull.jpg">
 					<h5>MASTERMIND JAPAN LONG SLEEVE SKULL POCKET TEE</h5>
@@ -178,7 +223,7 @@
 					<p>€545</p>
 				</a>
 				</li>
-				<li>
+				<li class="affix">
 					<a href="https://www.endclothing.com/nl/affix-affxwrks-logo-cap-fw21ac11-sgrn.html">
 					<img alt="AFFIX logo cap" src="images/affix-logo-cap.jpg">
 					<h5>AFFIX AFFXWRKS LOGO CAP</h5>
@@ -186,7 +231,7 @@
 					<p>€89</p>
 				</a>
 				</li>
-				<li>
+				<li class="neighborhoodClass">
 					<a href="https://www.endclothing.com/nl/neighborhood-big-loco-sunglasses-212mlnh-ew02-bm.html">
 					<img alt="Neighborhood big loco sunglasses" src="images/neighborhood-big-loco-sunglasses.jpg">
 					<h5>NEIGHBORHOOD BIG LOCO SUNGLASSES</h5>
@@ -194,7 +239,7 @@
 					<p>€275</p>
 				</a>
 				</li>
-				<li>
+				<li class="nanamica">
 					<a href="https://www.endclothing.com/nl/nanamica-down-muffler-sukf193-n.html">
 					<img alt="Nanamica down muffler" src="images/nanamica-down-muffler.jpg">
 					<h5>NANAMICA DOWN MUFFLER</h5>
@@ -202,7 +247,7 @@
 					<p>€129</p>
 				</a>
 				</li>
-				<li>
+				<li class="salomon">
 					<a href="https://www.endclothing.com/nl/salomon-xt-6-advanced-415748.html">
 					<img alt="Salomon xt-6" src="images/salomon-xt6.jpg">
 					<h5>SALOMON XT-6 ADVANCED</h5>
@@ -210,7 +255,7 @@
 					<p>€179</p>
 				</a>
 				</li>
-				<li> 
+				<li class="neighborhoodClass"> 
 					<a href="https://www.endclothing.com/nl/neighborhood-home-jogger-212ytnh-ptm04-nv.html">
 					<img alt="Neighborhood home jogger" src="images/neighborhood-home-jogger.jpg">
 					<h5>NEIGHBORHOOD HOME JOGGER</h5>
@@ -218,7 +263,7 @@
 					<p>€195</p>
 				</a>
 				</li>
-				<li> 
+				<li class="daiwa"> 
 					<a href="https://www.endclothing.com/nl/daiwa-pier39-tech-spy-fatigue-pant-bp-310-olv.html">
 					<img alt="DAIWA PIER39 TECH SPY FATIGUE PANT" src="images/daiwa-pier39-pant.jpg">
 					<h5>DAIWA PIER39 TECH SPY FATIGUE PANT</h5>
@@ -226,7 +271,7 @@
 					<p>€289</p>
 				</a>
 				</li>
-				<li> 
+				<li class="nanamica"> 
 					<a href="https://www.endclothing.com/nl/nanamica-fleece-jacket-suhf195-na.html">
 					<img alt="Nanamica fleece jacket" src="images/nanamica-fleece-jacket.jpg">
 					<h5>NANAMICA FLEECE JACKET</h5>
@@ -234,7 +279,7 @@
 					<p>€435</p>
 				</a>
 				</li>
-				<li> 
+				<li class="neighborhoodClass"> 
 					<a href="https://www.endclothing.com/nl/neighborhood-home-crew-sweat-212tsnh-shm06-od.html">
 					<img alt="Neighborhood home crew sweat" src="images/neighborhood-home-crew.jpg">
 					<h5>NEIGHBORHOOD HOME CREW SWEAT</h5>
@@ -243,49 +288,6 @@
 				</a>
 				</li>
 			</ul>
-		</section>
-
-		<section class="brands">
-			<ul>
-				<li>
-					<a href="https://www.endclothing.com/nl/brands/fucking-awesome">
-						<img alt="Fucking aweosme shirt" src="images/fucking-awesome.jpeg">
-						<h5>Fucking awesome</h5>
-						<p>Shop now</p>
-					</a>
-				</li>
-				<li>
-					<a href="https://www.endclothing.com/nl/brands/jil-sander">
-						<img alt="Jil sander" src="images/jil-sander.jpeg">
-						<h5>Jil Sander</h5>
-						<p>Shop now</p>
-					</a>
-				</li>
-				<li>
-					<a href="https://www.endclothing.com/nl/brands/wtaps">
-						<img alt="WTAPS" src="images/wtaps.jpeg">
-						<h5>WTAPS</h5>
-						<p>Shop now</p>
-					</a>
-				</li>
-				<li>
-					<a href="https://www.endclothing.com/nl/brands/loewe">
-						<img alt="Loewe" src="images/loewe.jpeg">
-						<h5>Loewe</h5>
-						<p>Shop now</p>
-					</a>
-				</li>
-			</ul>
-		</section>
-
-
-		<!-- off-white banner -->
-		<section class="banner">
-			<a href="#">
-				<h2>OFF-WHITE</h2>
-				<button>ONLINE NOW</button>
-				<!-- <img alt="off-white banner" src="images/off-white-banner.jpeg"> -->
-			</a>
 		</section>
 
 	</main>
@@ -376,7 +378,7 @@
 
 	</footer>
 
-	<script src="scripts/script.js"></script>
+	<script src="scripts/script-page2.js"></script>
 </body>
 
 

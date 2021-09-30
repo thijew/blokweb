@@ -12,7 +12,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Jij
 
-<details open>
+<details>
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Auteur:
@@ -32,7 +32,7 @@ Surface plane
 
 ## Je website
 
-<details open>
+<details>
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
@@ -78,7 +78,7 @@ https://www.endclothing.com/nl/latest-products/new-this-week
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik heb deze weeek alleen nog wat html geschreven dus er was nog niet echt een mogelijkheid voor feedback.
 
 
 ### Agenda voor meeting
@@ -92,12 +92,8 @@ samen met je groepje opstellen
 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
+Gekeken naar 
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
 
 </details>
 
@@ -111,23 +107,22 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik heb het hamburger menu gemaakt en de nav werkend gemaakt
 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| Chelsey        | Maxime          | Bilal/Thije       | Fabian         |
+Hamburger menu   | Slideshow maken  Voorgaande          imgs groter maken
+maken                               onderwerpen         in verhouding 
+
 
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
+Slideshow maken met behulp van de codepen van Sanne
 - punt 2
 - nog een punt
 - ...
