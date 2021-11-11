@@ -171,7 +171,7 @@ header nav > button:first-of-type {
   top: 0.8em;
   font-size: 1.5em;
   background-color: transparent;
-  z-index: 400;
+  
 }
 
 /* onderste  gedeelte van de nav */
@@ -604,11 +604,35 @@ section.footerNav  ul.toonDrop {
 }
 
 section.footerNav button  {
+  position: relative;
   border: none;
   background-color: transparent;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 0.075em;
+}
+
+section.footerNav button::before,
+section.footerNav button::after {
+	content:"";
+	position:absolute;
+	width:.75em;
+	height:2px;
+	right: -1.5em;
+	top:calc(50% - 1px);
+	border-radius:1px;
+	transition:.5s;
+	background-color:black;
+}
+
+section.footerNav button::before {
+	transform-origin:calc(100% - 1px) 1px;
+	transform:translatex(calc(-.375em + 1px)) translatey(.25em) rotate(45deg);
+}
+
+section.footerNav button::after {
+	transform-origin:1px 1px;
+	transform:translatex(calc(.375em - 1px)) translatey(.25em) rotate(-45deg);
 }
 
 

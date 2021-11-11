@@ -92,7 +92,7 @@ samen met je groepje opstellen
 
 
 ### Verslag van meeting
-Gekeken naar 
+
 
 
 </details>
@@ -123,9 +123,6 @@ maken                               onderwerpen         in verhouding
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
 Slideshow maken met behulp van de codepen van Sanne
-- punt 2
-- nog een punt
-- ...
 
 </details>
 
@@ -135,22 +132,16 @@ Slideshow maken met behulp van de codepen van Sanne
 
 ## Toegankelijkheidstest (week 4)
 
-<details>
-<summary>uitwerken na test in 8e voortgang</summary>
 
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
 
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+#### Titel bevindingen met toetsenbord
+Wanneer je met tab door de pagina heen wilt navigeren gaat de tab ook langs alle onzichtbare mogelijkheden. Hierdoor geeft het het idee dat het niet werkt maar je moet gewoon heel vak op tab drukken. Hier moet ik een oplossing voor gaan vinden.
 
 
-#### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+#### Titel screenreader bevindingen
+Bij het oplezen van de headings worden sommigen headings dubbel uitgesproken. Ook gaat hij alle onzichtbare opties oplezen wat het voor de gebruiker erg verwarrend maakt. 
 
 
 #### Titel volgende bevinding. 
@@ -176,7 +167,7 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+De website is eigenlijk helemaal af en klaar  voor het eindgesprek
 
 
 ### Agenda voor meeting
@@ -190,13 +181,7 @@ samen met je groepje opstellen
 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
-
-- punt 1
-- punt 2
-- nog een punt
-- ...
-
+Bij het gesprek was ik niet aanwezig.
 </details>
 
 
@@ -209,7 +194,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Het maken van de website ging eigenlijk erg goed. De opdrachten die in de les behandeld werden waren vaak van toepassing tijdens het maken van de site. Dit werkte erg goed omdat je dan eerst kennis op had gedaan uit de opdrachten en vervolgens meteen kon gebruiken in de praktijk. Wanneer ik echt vastliep en mijn vraag niet op internet kon vinden kon je altijd terecht bij 1 van de studentassistenten dit was echt top.
 
 ### Screenshot(s)
 
@@ -228,8 +213,10 @@ hier screenshot(s) van je eindresultaat
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+1. https://codepen.io/thijew/pen/poroZjp (Footer dingetje door Sanne)
+2. https://css-tricks.com/practical-css-scroll-snapping/ (Zorgt ervoor dat de nav niet meer scrollbaar is wanneer er een categorie geopend wordt in de nav)
+3. De voorbeelden in de les van Sanne
+4. https://css-tricks.com/snippets/css/a-guide-to-flexbox/ (Alle informatie over flexbox)
+5. https://css-tricks.com/almanac/ (Alle css bergrippen opgezocht)
 
 </details>
